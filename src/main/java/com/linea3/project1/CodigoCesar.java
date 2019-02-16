@@ -12,7 +12,7 @@ public class CodigoCesar {
     /*metodo encargado de encriptar con algoritmo Cesar un texto
      *@author alejandro y diego
      *@param texto cadena de caracteres con el texto a encriptar
-     ~Qparam llave numero e base al cual se encriptara
+     *@param llave numero en base al cual se encriptara
      *@return cadena de texto con el texto ya encriptado
      */
      public String Encriptar(String texto, int llave){
@@ -38,7 +38,7 @@ public class CodigoCesar {
     /*metodo encargado de desencriptar con algoritmo Cesar un texto
      *@author alejandro y diego
      *@param texto cadena de caracteres con el texto a desencriptar
-     ~Qparam llave numero e base al cual fue encriptado el texto
+     *@param llave numero en base al cual fue encriptado el texto
      *@return cadena de texto con el texto ya desencriptado
      */
      
