@@ -5,17 +5,17 @@
  */
 package com.linea3.project1;
 import java.util.Scanner;
-/**
- *
- * @author alejandro
- */
+
 public class Inicio {
 
-    /**
-     * @param args the command line arguments
+    /*Este metodo se encarga de mostrar el menu inicial al usuario 
+     *capturar los datos segun la opcion elegida e invocar el metodo correspondiente
+     *imprimir la cadena obtenida
+     *metodo principal del proyecto
+     *@author alejandro y diego
+     *@param args array de argumentos
+     *@return void no retorna nada
      */
-    
-    
     
     public static void main(String[] args) {
         
@@ -61,8 +61,7 @@ public class Inicio {
             }
             
             
-        }while(opcion!=3);
-        
+        }while(opcion!=3);   
         
     }
       

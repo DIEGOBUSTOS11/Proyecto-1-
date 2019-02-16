@@ -5,16 +5,16 @@
  */
 package com.linea3.project1;
 
-/**
- *
- * @author DiegoFernando
- */
-
-
 public class CodigoCesar {
     
     private String alfabeto = "abcdefghijklmnopqrstuvwxyz";
     
+    /*metodo encargado de encriptar con algoritmo Cesar un texto
+     *@author alejandro y diego
+     *@param texto cadena de caracteres con el texto a encriptar
+     ~Qparam llave numero e base al cual se encriptara
+     *@return cadena de texto con el texto ya encriptado
+     */
      public String Encriptar(String texto, int llave){
         
         //aqui se almacena el resultado
@@ -35,7 +35,13 @@ public class CodigoCesar {
         return textoEncriptado;
     }
  
-    
+    /*metodo encargado de desencriptar con algoritmo Cesar un texto
+     *@author alejandro y diego
+     *@param texto cadena de caracteres con el texto a desencriptar
+     ~Qparam llave numero e base al cual fue encriptado el texto
+     *@return cadena de texto con el texto ya desencriptado
+     */
+     
     public String Desencriptar(String texto, int llave){
         
         String textoDesencriptado = "";
