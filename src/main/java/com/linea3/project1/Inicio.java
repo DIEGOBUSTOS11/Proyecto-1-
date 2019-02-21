@@ -4,64 +4,20 @@
  * and open the template in the editor.
  */
 package com.linea3.project1;
-import java.util.Scanner;
 
 public class Inicio {
 
-    /*Este metodo se encarga de mostrar el menu inicial al usuario 
-     *capturar los datos segun la opcion elegida e invocar el metodo correspondiente
-     *imprimir la cadena obtenida
-     *metodo principal del proyecto
+    /**
+     *Este metodo se encarga de invocar el menu inicial al usuario 
      *@author alejandro y diego
      *@param args array de argumentos
-     *@return void no retorna nada
      */
     
     public static void main(String[] args) {
         
+        Menu menuInicial=new Menu();
         
-        Scanner scan=new Scanner(System.in);
-        
-        CodigoCesar encriptar=new CodigoCesar();
-        
-        String texto;
-        int opcion=0,llave=0;
-        
-        do{
-            System.out.print("\n\n\n1. ENCRIPTAR \n2. DESENCRIPTAR \n3. SALIR\n");
-            opcion= scan.nextInt();
-            
-            if(opcion==1){
-                
-                System.out.print("Introduzca el texto a encriptar: \n");
-                texto = scan.next();
-                System.out.print("\nIntroduzca la llave de encriptacion: \n");
-                llave = scan.nextInt();
-                
-                texto=encriptar.Encriptar(texto, llave);
-                System.out.print("\nTexto encriptado: "+texto);
-                     
-            }else if(opcion==2){
-                
-                System.out.print("Introduzca el texto a desencriptar: \n");
-                texto = scan.next();
-                System.out.print("\nIntroduzca la llave de desencriptacion: \n");
-                llave = scan.nextInt();
-                
-                texto=encriptar.Desencriptar(texto, llave);
-                System.out.print("\nTexto desencriptado: "+texto);
-                
-            }else if(opcion==3){
-                
-                System.out.print("\nGRACIAS POR USAR ESTE PROGRAMA");
-                
-            }else{
-                
-                System.out.print("\nOPCION INCORRECTA");
-            }
-            
-            
-        }while(opcion!=3);   
+        menuInicial.MenuInicial();
         
     }
       

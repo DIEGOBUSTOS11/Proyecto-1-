@@ -7,9 +7,13 @@ package com.linea3.project1;
 
 public class CodigoCesar {
     
-    private String alfabeto = "abcdefghijklmnopqrstuvwxyz";
+    /**
+     * String alfabeto almacena los caracteres en minuscula del alfabeto
+     */
+    private final String  alfabeto = "abcdefghijklmnopqrstuvwxyz";
     
-    /*metodo encargado de encriptar con algoritmo Cesar un texto
+    /**
+     *metodo encargado de encriptar con algoritmo Cesar un texto
      *@author alejandro y diego
      *@param texto cadena de caracteres con el texto a encriptar
      *@param llave numero en base al cual se encriptara
@@ -35,7 +39,8 @@ public class CodigoCesar {
         return textoEncriptado;
     }
  
-    /*metodo encargado de desencriptar con algoritmo Cesar un texto
+    /**
+     *metodo encargado de desencriptar con algoritmo Cesar un texto
      *@author alejandro y diego
      *@param texto cadena de caracteres con el texto a desencriptar
      *@param llave numero en base al cual fue encriptado el texto
